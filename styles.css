@@ -545,3 +545,51 @@ footer {
 	font-size: 0.9rem;
 	margin-bottom: 4px;
 }
+
+/* Différencier visuellement les tuiles selon le tag détecté */
+.projects .project {
+	position: relative;
+}
+
+/* Liseré à gauche pour l’identification rapide */
+.projects .project::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	width: 6px;
+	left: 0;
+	border-radius: inherit;
+	background: transparent;
+}
+
+/* Tuiles GRDF (Projets tuteurés) → vert */
+.projects .project:has(.tag.t-green) {
+	background: linear-gradient(0deg, rgba(34, 197, 94, 0.08), transparent 60%);
+	border-color: rgba(34, 197, 94, 0.25);
+}
+.projects .project:has(.tag.t-green)::before {
+	background: linear-gradient(#22c55e, #16a34a);
+}
+/* Optionnel: renforcer le tag lui-même */
+.projects .project:has(.tag.t-green) .tag.t-green {
+	background: #16a34a;
+	color: #fff;
+}
+
+/* Tuiles IUT (SAE - IUT) → bleu */
+.projects .project:has(.tag.t-blue) {
+	background: linear-gradient(
+		0deg,
+		rgba(59, 130, 246, 0.08),
+		transparent 60%
+	);
+	border-color: rgba(59, 130, 246, 0.25);
+}
+.projects .project:has(.tag.t-blue)::before {
+	background: linear-gradient(#3b82f6, #1d4ed8);
+}
+/* Optionnel: renforcer le tag lui-même */
+.projects .project:has(.tag.t-blue) .tag.t-blue {
+	background: #2563eb;
+	color: #fff;
+}

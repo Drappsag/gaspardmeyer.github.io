@@ -1,219 +1,386 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gaspard MEYER • Portfolio</title>
-  <meta name="description" content="Portfolio de Gaspard MEYER — Étudiant BUT Informatique (DACS), alternant chez GRDF (Supervision Radio), futur Mastère Expert Cybersécurité à Ynov Lyon en alternance au Crédit Agricole. Projets, compétences, CV et contacts." />
-  <meta name="theme-color" content="#0a0f1e" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  
-  <!-- Ajout ultra-minimal pour supporter une image optionnelle par tuile projet -->
-  <style>
-    /* Image optionnelle dans une tuile projet */
-    .project-media{margin:.75rem 0;border-radius:16px;overflow:hidden}
-    .project-media img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
-  </style>
-</head>
-<body>
-  <a class="skip-link" href="#projets">Aller au contenu</a>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Gaspard MEYER • Portfolio</title>
+		<meta
+			name="description"
+			content="Portfolio de Gaspard MEYER — Étudiant BUT Informatique (DACS), alternant chez GRDF (Supervision Radio), futur Mastère Expert Cybersécurité à Ynov Lyon en alternance au Crédit Agricole. Projets, compétences, CV et contacts."
+		/>
+		<meta name="theme-color" content="#0a0f1e" />
+		<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
 
-  <!-- NAV -->
-  <header class="nav-wrap">
-    <div class="container nav">
-      <a href="#accueil" class="brand reveal">
-        <div class="logo">
-          <img src="assets/photo-gaspard.jpg" alt="Photo de Gaspard Meyer" class="avatar" />
-        </div>
-        <span class="brand-name">Gaspard MEYER</span>
-      </a>
-      <button class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">☰</button>
-      <ul id="menu" class="menu">
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+		<!-- Ajout ultra-minimal pour supporter une image optionnelle par tuile projet -->
+		<style>
+			/* Image optionnelle dans une tuile projet */
+			.project-media {
+				margin: 0.75rem 0;
+				border-radius: 16px;
+				overflow: hidden;
+			}
+			.project-media img {
+				width: 100%;
+				height: auto;
+				display: block;
+				aspect-ratio: 16/9;
+				object-fit: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<a class="skip-link" href="#projets">Aller au contenu</a>
 
-  <!-- HERO -->
-  <section id="accueil" class="hero">
-    <div class="orb orb-a"></div>
-    <div class="orb orb-b"></div>
+		<!-- NAV -->
+		<header class="nav-wrap">
+			<div class="container nav">
+				<a href="#accueil" class="brand reveal">
+					<div class="logo">
+						<img
+							src="assets/photo-gaspard.jpg"
+							alt="Photo de Gaspard Meyer"
+							class="avatar"
+						/>
+					</div>
+					<span class="brand-name">Gaspard MEYER</span>
+				</a>
+				<button
+					class="menu-btn"
+					aria-label="Ouvrir le menu"
+					aria-expanded="false"
+					aria-controls="menu"
+				>
+					☰
+				</button>
+				<ul id="menu" class="menu">
+					<li><a href="#accueil">Accueil</a></li>
+					<li><a href="#apropos">À propos</a></li>
+					<li><a href="#competences">Compétences</a></li>
+					<li><a href="#projets">Projets</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</header>
 
-    <div class="container grid">
-      <div class="reveal">
-        <span class="chip">Étudiant BUT Info • Alternant GRDF • Futur Mastère Cybersécurité</span>
-        <h1>Bonjour, moi c'est <span class="accent">Gaspard</span> 👋</h1>
-        <p class="subtitle">
-          Je suis étudiant en BUT Informatique, parcours <strong>DACS</strong> (Déploiement d’Applications Communicantes et Sécurisées) à l’<strong>IUT Lyon 1</strong> et alternant chez <strong>GRDF</strong> au sein de l’équipe <strong>Supervision Radio</strong>.
-          À la rentrée 2025, j’intègre un Mastère <strong>Expert Cybersécurité</strong> à <strong>Ynov Lyon</strong>, en alternance au <strong>Crédit Agricole Technologies et Services</strong>.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="#projets">Voir mes projets</a>
-          <a class="btn" href="assets/Gaspard-Meyer-CV.pdf" download="Gaspard-Meyer-CV.pdf">Télécharger mon CV (PDF)</a>
-          <a class="btn ghost" href="#contact">Me contacter</a>
-        </div>
-        <div class="kpis">
-          <div class="kpi"><strong>2</strong><div>années d'alternance</div></div>
-          <div class="kpi"><strong>11+</strong><div>projets présentés</div></div>
-          <div class="kpi"><strong>DACS</strong><div>parcours BUT Info</div></div>
-        </div>
-      </div>
+		<!-- HERO -->
+		<section id="accueil" class="hero">
+			<div class="orb orb-a"></div>
+			<div class="orb orb-b"></div>
 
-      <div class="hero-side reveal">
-        <div class="photo-hero">
-          <img src="assets/photo-gaspard.jpg" alt="Portrait de Gaspard Meyer" />
-        </div>
-        <div class="panel glass tilt">
-          <h3 class="panel-title">Ce que je fais chez GRDF</h3>
-          <ul class="panel-list">
-            <li>Maintenance à distance des équipements de télérelève (compteurs Gazpar).</li>
-            <li>Suivi & analyse d’incidents (SIAS, KSPER, KATI) + rapports Power BI / Excel (PowerQuery).</li>
-            <li>Support techniciens : appels avant intervention.</li>
-          </ul>
-          <p class="muted">Outils : KSPER, SIAS, KATI, Power BI, SharePoint, Oracle.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+			<div class="container grid">
+				<div class="reveal">
+					<span class="chip"
+						>Étudiant BUT Info • Alternant GRDF • Futur Mastère
+						Cybersécurité</span
+					>
+					<h1>
+						Bonjour, moi c'est
+						<span class="accent">Gaspard</span> 👋
+					</h1>
+					<p class="subtitle">
+						Je suis étudiant en BUT Informatique, parcours
+						<strong>DACS</strong> (Déploiement d’Applications
+						Communicantes et Sécurisées) à l’<strong
+							>IUT Lyon 1</strong
+						>
+						et alternant chez <strong>GRDF</strong> au sein de
+						l’équipe <strong>Supervision Radio</strong>. À la
+						rentrée 2025, j’intègre un Mastère
+						<strong>Expert Cybersécurité</strong> à
+						<strong>Ynov Lyon</strong>, en alternance au
+						<strong>Crédit Agricole Technologies et Services</strong
+						>.
+					</p>
+					<div class="cta">
+						<a class="btn primary" href="#projets"
+							>Voir mes projets</a
+						>
+						<a
+							class="btn"
+							href="assets/Gaspard-Meyer-CV.pdf"
+							download="Gaspard-Meyer-CV.pdf"
+							>Télécharger mon CV (PDF)</a
+						>
+						<a class="btn ghost" href="#contact">Me contacter</a>
+					</div>
+					<div class="kpis">
+						<div class="kpi">
+							<strong>2</strong>
+							<div>années d'alternance</div>
+						</div>
+						<div class="kpi">
+							<strong>11+</strong>
+							<div>projets présentés</div>
+						</div>
+						<div class="kpi">
+							<strong>DACS</strong>
+							<div>parcours BUT Info</div>
+						</div>
+					</div>
+				</div>
 
-  <!-- A PROPOS -->
-  <section id="apropos">
-    <div class="container about">
-      <div class="panel reveal card">
-        <h2>À propos</h2>
-        <h3>Langues</h3>
-        <ul>
-          <li>Français (natif)</li>
-          <li>Anglais (B2 – séjour en Angleterre)</li>
-          <li>Allemand (bases)</li>
-        </ul>
-        <h3>Centres d’intérêt</h3>
-        <ul>
-          <li>🎻 Violoncelle — 10 ans de pratique (orchestre & ensemble)</li>
-          <li>💡 Technologies & objets connectés — domotique, cybersécurité personnelle</li>
-          <li>🏃‍♂️ Sport — Aviron, salle & course à pied</li>
-          <li>🎮 Jeux vidéo</li>
-        </ul>
-      </div>
+				<div class="hero-side reveal">
+					<div class="photo-hero">
+						<img
+							src="assets/photo-gaspard.jpg"
+							alt="Portrait de Gaspard Meyer"
+						/>
+					</div>
+					<div class="panel glass tilt">
+						<h3 class="panel-title">Ce que je fais chez GRDF</h3>
+						<ul class="panel-list">
+							<li>
+								Maintenance à distance des équipements de
+								télérelève (compteurs Gazpar).
+							</li>
+							<li>
+								Suivi & analyse d’incidents (SIAS, KSPER, KATI)
+								+ rapports Power BI / Excel (PowerQuery).
+							</li>
+							<li>
+								Support techniciens : appels avant intervention.
+							</li>
+						</ul>
+						<p class="muted">
+							Outils : KSPER, SIAS, KATI, Power BI, SharePoint,
+							Oracle.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      <div class="panel reveal card">
-        <h2>Parcours</h2>
-        <h3>Expériences professionnelles</h3>
-        <div class="timeline">
-          <div class="tl-item">
-            <div class="when">2025 → 2027</div>
-            <strong>Alternance – Crédit Agricole, Cybersécurité</strong>
-            <p>Alternance en Mastère Cybersécurité : sécurité des SI, détection d’intrusion, protection des données.</p>
-          </div>
-          <div class="tl-item">
-            <div class="when">2023 → 2025</div>
-            <strong>Alternance – GRDF, Supervision Radio Nationale</strong>
-            <p>Monitoring national, automatisation de vérifications (Excel/PowerQuery), analyse de logs, reporting Power BI, support techniciens.</p>
-          </div>
-        </div>
-        <h3>Formations</h3>
-        <div class="timeline">
-          <div class="tl-item">
-            <div class="when">2025 → 2027</div>
-            <strong>Mastère Expert Cybersécurité – Ynov Lyon</strong>
-          </div>
-          <div class="tl-item">
-            <div class="when">2022 → 2025</div>
-            <strong>BUT Informatique – Parcours DACS (IUT Lyon 1 – La Doua)</strong>
-          </div>
-          <div class="tl-item">
-            <div class="when">2020</div>
-            <strong>Baccalauréat STI2D – SIN (Lazaristes, mention Bien)</strong>
-          </div>
-        </div>
-      </div>
+		<!-- A PROPOS -->
+		<section id="apropos">
+			<div class="container about">
+				<div class="panel reveal card">
+					<h2>À propos</h2>
+					<h3>Langues</h3>
+					<ul>
+						<li>Français (natif)</li>
+						<li>Anglais (B2 – séjour en Angleterre)</li>
+						<li>Allemand (bases)</li>
+					</ul>
+					<h3>Centres d’intérêt</h3>
+					<ul>
+						<li>
+							🎻 Violoncelle — 10 ans de pratique (orchestre &
+							ensemble)
+						</li>
+						<li>
+							💡 Technologies & objets connectés — domotique,
+							cybersécurité personnelle
+						</li>
+						<li>🏃‍♂️ Sport — Aviron, salle & course à pied</li>
+						<li>🎮 Jeux vidéo</li>
+					</ul>
+				</div>
 
-      <div class="panel reveal card">
-        <h2>GRDF</h2>
-        <p>GRDF est le principal distributeur de gaz naturel en France, gérant plus de 200 000 km de réseau pour environ 11 millions de clients. Au sein de l’équipe Supervision Radio, j’assure le suivi et la maintenance des équipements de télérelève des compteurs de gaz.</p>
-        <h3>Compétences Entreprise</h3>
-        <ol class="pill-list">
-          <li><strong>Analyser</strong> — Analyser les différentes pannes et incidents sur les appareils de télérelève des compteurs GRDF.</li>
-          <li><strong>Traiter</strong> — Agir sur les différentes pannes et prendre des décisions sur les actions à réaliser.</li>
-          <li><strong>Surveiller et prévenir</strong> — Assurer le bon fonctionnement des appareils de télérelève sur le long terme en anticipant des pannes.</li>
-          <li><strong>Interagir</strong> — Communiquer efficacement avec les techniciens sur site afin de résoudre les incidents dans les meilleurs délais.</li>
-        </ol>
-      </div>
+				<div class="panel reveal card">
+					<h2>Parcours</h2>
+					<h3>Expériences professionnelles</h3>
+					<div class="timeline">
+						<div class="tl-item">
+							<div class="when">2025 → 2027</div>
+							<strong
+								>Alternance – Crédit Agricole,
+								Cybersécurité</strong
+							>
+							<p>
+								Alternance en Mastère Cybersécurité : sécurité
+								des SI, détection d’intrusion, protection des
+								données.
+							</p>
+						</div>
+						<div class="tl-item">
+							<div class="when">2023 → 2025</div>
+							<strong
+								>Alternance – GRDF, Supervision Radio
+								Nationale</strong
+							>
+							<p>
+								Monitoring national, automatisation de
+								vérifications (Excel/PowerQuery), analyse de
+								logs, reporting Power BI, support techniciens.
+							</p>
+						</div>
+					</div>
+					<h3>Formations</h3>
+					<div class="timeline">
+						<div class="tl-item">
+							<div class="when">2025 → 2027</div>
+							<strong
+								>Mastère Expert Cybersécurité – Ynov
+								Lyon</strong
+							>
+						</div>
+						<div class="tl-item">
+							<div class="when">2022 → 2025</div>
+							<strong
+								>BUT Informatique – Parcours DACS (IUT Lyon 1 –
+								La Doua)</strong
+							>
+						</div>
+						<div class="tl-item">
+							<div class="when">2020</div>
+							<strong
+								>Baccalauréat STI2D – SIN (Lazaristes, mention
+								Bien)</strong
+							>
+						</div>
+					</div>
+				</div>
 
-      <div class="panel reveal card">
-        <h2>L’IUT Lyon 1</h2>
-        <p>L’IUT Lyon 1 – Département Informatique forme aux fondamentaux des systèmes d’information : développement, systèmes & réseaux, données et gestion de projet, avec une forte dimension pratique et professionnalisante.</p>
-        <h3>Compétences IUT</h3>
-        <ol class="pill-list">
-          <li><strong>Réaliser</strong> — Concevoir, coder, tester et intégrer une solution informatique pour un client.</li>
-          <li><strong>Optimiser</strong> — Proposer des applications optimisées selon des critères (temps d’exécution, précision, consommation de ressources).</li>
-          <li><strong>Administrer</strong> — Installer, configurer, maintenir des infrastructures, services et réseaux ; optimiser le SI d’une organisation.</li>
-          <li><strong>Gérer</strong> — Concevoir, gérer, administrer et exploiter les données, et fournir l’information utile au pilotage.</li>
-          <li><strong>Conduire</strong> — Répondre aux besoins utilisateurs, organiser et piloter un projet (méthodes classiques ou agiles).</li>
-          <li><strong>Collaborer</strong> — Développer et exploiter les aptitudes pour travailler efficacement en équipe informatique.</li>
-        </ol>
-      </div>
-	  
-	  
-    </div>
-  </section>
+				<div class="panel reveal card">
+					<h2>GRDF</h2>
+					<p>
+						GRDF est le principal distributeur de gaz naturel en
+						France, gérant plus de 200 000 km de réseau pour environ
+						11 millions de clients. Au sein de l’équipe Supervision
+						Radio, j’assure le suivi et la maintenance des
+						équipements de télérelève des compteurs de gaz.
+					</p>
+					<h3>Compétences Entreprise</h3>
+					<ol class="pill-list">
+						<li>
+							<strong>Analyser</strong> — Analyser les différentes
+							pannes et incidents sur les appareils de télérelève
+							des compteurs GRDF.
+						</li>
+						<li>
+							<strong>Traiter</strong> — Agir sur les différentes
+							pannes et prendre des décisions sur les actions à
+							réaliser.
+						</li>
+						<li>
+							<strong>Surveiller et prévenir</strong> — Assurer le
+							bon fonctionnement des appareils de télérelève sur
+							le long terme en anticipant des pannes.
+						</li>
+						<li>
+							<strong>Interagir</strong> — Communiquer
+							efficacement avec les techniciens sur site afin de
+							résoudre les incidents dans les meilleurs délais.
+						</li>
+					</ol>
+				</div>
 
-  <!-- COMPETENCES -->
-  <section id="competences">
-    <div class="container skills">
-      <div class="panel reveal">
-        <h2>Compétences techniques</h2>
-        <div class="chipset">
-          <span class="skill">Active Directory (GPO, groupes, partages)</span>
-          <span class="skill">Windows Server</span>
-          <span class="skill">PowerShell</span>
-          <span class="skill">Shell Unix</span>
-          <span class="skill">Python (bases)</span>
-          <span class="skill">Excel + PowerQuery</span>
-          <span class="skill">Power BI</span>
-          <span class="skill">Suricata (IDS/IPS)</span>
-          <span class="skill">Wazuh (SIEM)</span>
-          <span class="skill">Réseaux (IP, VLAN, Routage, STP)</span>
-          <span class="skill">Notions de cryptographie</span>
-          <span class="skill">Cisco CCNA 1</span>
-          <span class="skill">Oracle / MySQL / PL-SQL</span>
-          <span class="skill">SharePoint</span>
-        </div>
-      </div>
-      <div class="panel reveal">
-        <h2>Soft skills</h2>
-        <ul class="soft">
-          <li>🎛️ <strong>Pédagogue</strong> — vulgarisation pour collègues non‑informaticiens.</li>
-          <li>🙂 <strong>Positif</strong> — bon état d’esprit même en contexte tendu.</li>
-          <li>🗂️ <strong>Organisé</strong> — planifie les tâches et structure efficacement le travail pour optimiser les résultats.</li>
-          <li>🤝 <strong>Relationnel</strong> — bonnes relations avec collègues, manager, maître d’apprentissage, professeurs.</li>
-          <li>🔍 <strong>Curiosité technique</strong> — veille cybersécurité, réseaux et automatisation.</li>
-          <li>📌 <strong>Autonomie & rigueur</strong></li>
-          <li>👥 <strong>Esprit d’équipe</strong></li>
-        </ul>
-      </div>
+				<div class="panel reveal card">
+					<h2>L’IUT Lyon 1</h2>
+					<p>
+						L’IUT Lyon 1 – Département Informatique forme aux
+						fondamentaux des systèmes d’information : développement,
+						systèmes & réseaux, données et gestion de projet, avec
+						une forte dimension pratique et professionnalisante.
+					</p>
+					<h3>Compétences IUT</h3>
+					<ol class="pill-list">
+						<li>
+							<strong>Réaliser</strong> — Concevoir, coder, tester
+							et intégrer une solution informatique pour un
+							client.
+						</li>
+						<li>
+							<strong>Optimiser</strong> — Proposer des
+							applications optimisées selon des critères (temps
+							d’exécution, précision, consommation de ressources).
+						</li>
+						<li>
+							<strong>Administrer</strong> — Installer,
+							configurer, maintenir des infrastructures, services
+							et réseaux ; optimiser le SI d’une organisation.
+						</li>
+						<li>
+							<strong>Gérer</strong> — Concevoir, gérer,
+							administrer et exploiter les données, et fournir
+							l’information utile au pilotage.
+						</li>
+						<li>
+							<strong>Conduire</strong> — Répondre aux besoins
+							utilisateurs, organiser et piloter un projet
+							(méthodes classiques ou agiles).
+						</li>
+						<li>
+							<strong>Collaborer</strong> — Développer et
+							exploiter les aptitudes pour travailler efficacement
+							en équipe informatique.
+						</li>
+					</ol>
+				</div>
+			</div>
+		</section>
 
-</div>
+		<!-- COMPETENCES -->
+		<section id="competences">
+			<div class="container skills">
+				<div class="panel reveal">
+					<h2>Compétences techniques</h2>
+					<div class="chipset">
+						<span class="skill"
+							>Active Directory (GPO, groupes, partages)</span
+						>
+						<span class="skill">Windows Server</span>
+						<span class="skill">PowerShell</span>
+						<span class="skill">Shell Unix</span>
+						<span class="skill">Python (bases)</span>
+						<span class="skill">Excel + PowerQuery</span>
+						<span class="skill">Power BI</span>
+						<span class="skill">Suricata (IDS/IPS)</span>
+						<span class="skill">Wazuh (SIEM)</span>
+						<span class="skill"
+							>Réseaux (IP, VLAN, Routage, STP)</span
+						>
+						<span class="skill">Notions de cryptographie</span>
+						<span class="skill">Cisco CCNA 1</span>
+						<span class="skill">Oracle / MySQL / PL-SQL</span>
+						<span class="skill">SharePoint</span>
+					</div>
+				</div>
+				<div class="panel reveal">
+					<h2>Soft skills</h2>
+					<ul class="soft">
+						<li>
+							🎛️ <strong>Pédagogue</strong> — vulgarisation pour
+							collègues non‑informaticiens.
+						</li>
+						<li>
+							🙂 <strong>Positif</strong> — bon état d’esprit même
+							en contexte tendu.
+						</li>
+						<li>
+							🗂️ <strong>Organisé</strong> — planifie les tâches
+							et structure efficacement le travail pour optimiser
+							les résultats.
+						</li>
+						<li>
+							🤝 <strong>Relationnel</strong> — bonnes relations
+							avec collègues, manager, maître d’apprentissage,
+							professeurs.
+						</li>
+						<li>
+							🔍 <strong>Curiosité technique</strong> — veille
+							cybersécurité, réseaux et automatisation.
+						</li>
+						<li>📌 <strong>Autonomie & rigueur</strong></li>
+						<li>👥 <strong>Esprit d’équipe</strong></li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
-	  
-    </div>
-  </section>
-
-  <!-- PROJETS -->
-  <section id="projets">
-    <div class="container">
-      <h2>Projets</h2>
-      <div class="projects">
-        
-        <!-- 
+		<!-- PROJETS -->
+		<section id="projets">
+			<div class="container">
+				<h2>Projets</h2>
+				<div class="projects">
+					<!-- 
           ASTUCE : Pour ajouter une image à une tuile projet, insérez ce bloc
           (juste après <div class="tags">…</div> par exemple) :
 
@@ -222,278 +389,522 @@
           </figure>
         -->
 
-        <article class="panel project tilt reveal">
-          <div class="tags">
-            <span class="tag t-green">Projets tuteurés</span>
-            <span class="tag">Excel</span>
-            <span class="tag">PowerQuery</span>
-          </div>
-          <h3>Fiabilisation des appels techniciens avant intervention</h3>
-          <p>Automatisation de la vérification des appels pré‑intervention via Excel/PowerQuery. Croisement KSPER, KATI, SIAS. Résultat : suivi clair + amélioration de la conformité.</p>
-          <details class="iut"><summary>Compétences IUT ↔ GRDF</summary>
-            <ul class="iut-list">
-              <li><strong>Réaliser</strong> — automatiser une solution concrète pour les superviseurs GRDF (PowerQuery + règles métier).</li>
-              <li><strong>Optimiser</strong> — réduire le temps d’analyse des appels et limiter les erreurs humaines.</li>
-              <li><strong>Administrer</strong> — exploiter proprement les sources SI (KSPER, KATI, SIAS) et l’environnement bureautique.</li>
-              <li><strong>Gérer</strong> — croiser, nettoyer et restituer des données utiles au pilotage des interventions.</li>
-              <li><strong>Conduire</strong> — formaliser le processus, prioriser les cas et planifier les actions correctives.</li>
-              <li><strong>Collaborer</strong> — partager les tableaux et former les techniciens/équipes régionales.</li>
-            </ul>
-          </details>
-        </article>
+					<article class="panel project tilt reveal">
+						<div class="tags">
+							<span class="tag t-green">Projets tuteurés</span>
+							<span class="tag">Excel</span>
+							<span class="tag">PowerQuery</span>
+						</div>
+						<h3>
+							Fiabilisation des appels techniciens avant
+							intervention
+						</h3>
+						<p>
+							Automatisation de la vérification des appels
+							pré‑intervention via Excel/PowerQuery. Croisement
+							KSPER, KATI, SIAS. Résultat : suivi clair +
+							amélioration de la conformité.
+						</p>
+						<details class="iut">
+							<summary>Compétences IUT ↔ GRDF</summary>
+							<ul class="iut-list">
+								<li>
+									<strong>Réaliser</strong> → J’ai conçu et
+									mis en place une solution automatisée dans
+									Excel/PowerQuery pour répondre à un besoin
+									métier concret.
+								</li>
+								<li>
+									<strong>Optimiser</strong> → J’ai amélioré
+									le suivi en réduisant le temps d’analyse
+									manuelle et en fiabilisant la conformité.
+								</li>
+								<li>
+									<strong>Gérer</strong> → J’ai exploité et
+									croisé des données issues de plusieurs
+									sources (KSPER, KATI, SIAS) pour fournir une
+									information utile aux superviseurs.
+								</li>
+								<li>
+									<strong>Conduire</strong> → J’ai répondu à
+									un besoin exprimé par l’équipe et organisé
+									le projet pour livrer un outil exploitable.
+								</li>
+							</ul>
+						</details>
+					</article>
 
-        <article class="panel project tilt reveal">
-          <div class="tags">
-            <span class="tag t-purple">SOC</span>
-            <span class="tag">Suricata</span>
-            <span class="tag">Wazuh</span>
-          </div>
-          <h3>Mini‑SOC pédagogique</h3>
-          <p>Montage d’un environnement de détection (IDS/IPS Suricata) + SIEM (Wazuh) avec VM Kali pour scénarios d’attaque‑défense.</p>
-          <details class="iut"><summary>Compétences IUT ↔ GRDF</summary>
-            <ul class="iut-list">
-              <li><strong>Réaliser</strong> — déployer une stack sécu transposable aux pratiques de supervision et d’analyse d’incidents chez GRDF.</li>
-              <li><strong>Optimiser</strong> — affiner les règles/alertes pour réduire le bruit, comme sur des tableaux de bord métier.</li>
-              <li><strong>Administrer</strong> — installer/configurer VMs, réseaux et services, à l’image d’un environnement de prod.</li>
-              <li><strong>Gérer</strong> — centraliser et corréler des logs, utile pour comprendre des pannes d’équipements.</li>
-              <li><strong>Conduire</strong> — définir des scénarios de tests, jalons et critères d’acceptation.</li>
-              <li><strong>Collaborer</strong> — travailler en binôme et rédiger des comptes‑rendus compréhensibles par des non‑spécialistes.</li>
-            </ul>
-          </details>
-        </article>
+					<article class="panel project tilt reveal">
+						<div class="tags">
+							<span class="tag t-blue">IUT</span>
+							<span class="tag t-purple">SOC</span>
+							<span class="tag">Suricata</span>
+							<span class="tag">Wazuh</span>
+						</div>
+						<h3>Mini‑SOC pédagogique</h3>
+						<p>
+							Montage d’un environnement de détection (IDS/IPS
+							Suricata) + SIEM (Wazuh) avec VM Kali pour scénarios
+							d’attaque‑défense.
+						</p>
+						<details class="iut">
+							<summary>Compétences IUT</summary>
+							<ul class="iut-list">
+								<li>
+									<strong>Réaliser</strong> → J’ai monté un
+									environnement complet avec IDS/IPS et SIEM
+									pour tester des scénarios concrets
+									d’attaque-défense.
+								</li>
+								<li>
+									<strong>Administrer</strong> → J’ai
+									installé, configuré et maintenu les
+									différentes machines virtuelles (Suricata,
+									Wazuh, Kali) pour assurer le fonctionnement
+									du SOC.
+								</li>
+								<li>
+									<strong>Collaborer</strong> → J’ai travaillé
+									en groupe pour répartir les tâches entre
+									déploiement, attaque et défense afin de
+									construire un environnement cohérent.
+								</li>
+							</ul>
+						</details>
+					</article>
 
-        <article class="panel project tilt reveal">
-          <div class="tags">
-            <span class="tag t-orange">DataViz</span>
-            <span class="tag">CookieViz</span>
-          </div>
-          <h3>Exploration de données avec CookieViz</h3>
-          <p>Analyse et visualisation des cookies d’un site pour comprendre les échanges tiers et l’empreinte de suivi.</p>
-          <details class="iut"><summary>Compétences IUT ↔ GRDF</summary>
-            <ul class="iut-list">
-              <li><strong>Réaliser</strong> — mettre en place une extraction/visualisation réutilisable pour les rapports internes GRDF.</li>
-              <li><strong>Optimiser</strong> — choisir des indicateurs lisibles pour une décision rapide.</li>
-              <li><strong>Administrer</strong> — configurer les outils et sources de données comme sur les postes de supervision.</li>
-              <li><strong>Gérer</strong> — nettoyer, trier et rapprocher des données, à l’image des jeux KSPER/SIAS.</li>
-              <li><strong>Conduire</strong> — cadrer la démarche d’étude et le périmètre d’analyse.</li>
-              <li><strong>Collaborer</strong> — restituer les résultats de façon pédagogique aux équipes.</li>
-            </ul>
-          </details>
-        </article>
+					<article class="panel project tilt reveal">
+						<div class="tags">
+							<span class="tag t-blue">IUT</span>
+							<span class="tag t-orange">DataViz</span>
+							<span class="tag">CookieViz</span>
+						</div>
+						<h3>Exploration de données avec CookieViz</h3>
+						<p>
+							Analyse et visualisation des cookies d’un site pour
+							comprendre les échanges tiers et l’empreinte de
+							suivi.
+						</p>
+						<details class="iut">
+							<summary>Compétences IUT</summary>
+							<ul class="iut-list">
+								<li>
+									<strong>Gérer</strong> → J’ai collecté et
+									exploité les données de navigation afin de
+									mettre en évidence les échanges tiers et les
+									pratiques de suivi.
+								</li>
+								<li>
+									<strong>Réaliser</strong> → J’ai utilisé un
+									outil de visualisation pour analyser et
+									représenter concrètement le fonctionnement
+									des cookies d’un site.
+								</li>
+							</ul>
+						</details>
+					</article>
 
-        <article class="panel project tilt reveal">
-          <div class="tags">
-            <figure class="project-media">
-            <img src="assets/problemes.webp" alt="Aperçu du projet" loading="lazy">
-          </figure>
-            <span class="tag t-green">Projets tuteurés</span>
-            <span class="tag">K‑SPER</span>
-          </div>
-          <h3>Détecter de nouveaux problèmes</h3>
-          <p>Améliorer le suivi et la gestion des incidents des concentrateurs via K‑SPER, analyser les défaillances et mettre en place un processus durable pour une maintenance efficace.</p>
-          <details class="iut"><summary>Compétences IUT ↔ GRDF</summary>
-            <ul class="iut-list">
-              <li><strong>Réaliser</strong> — bâtir des requêtes, rapports et vues utiles aux superviseurs.</li>
-              <li><strong>Optimiser</strong> — définir des seuils/alertes pour remonter l’essentiel et agir plus vite.</li>
-              <li><strong>Administrer</strong> — suivre l’état des concentrateurs et des services associés.</li>
-              <li><strong>Gérer</strong> — historiser les incidents et mesurer l’efficacité des actions.</li>
-              <li><strong>Conduire</strong> — structurer un plan d’action et un circuit de décision.</li>
-              <li><strong>Collaborer</strong> — mettre en place une boucle de feedback avec le terrain.</li>
-            </ul>
-          </details>
-        </article>
+					<article class="panel project tilt reveal">
+						<div class="tags">
+							<figure class="project-media">
+								<img
+									src="assets/problemes.webp"
+									alt="Aperçu du projet"
+									loading="lazy"
+								/>
+							</figure>
+							<span class="tag t-green">Projets tuteurés</span>
+							<span class="tag">K‑SPER</span>
+						</div>
+						<h3>Détecter de nouveaux problèmes</h3>
+						<p>
+							Améliorer le suivi et la gestion des incidents des
+							concentrateurs via K‑SPER, analyser les défaillances
+							et mettre en place un processus durable pour une
+							maintenance efficace.
+						</p>
+						<details class="iut">
+							<summary>Compétences IUT ↔ GRDF</summary>
+							<ul class="iut-list">
+								<li>
+									<strong>Gérer</strong> → J’ai exploité les
+									données issues de K-SPER et BI POC pour
+									analyser les défaillances et identifier des
+									incidents récurrents.
+								</li>
+								<li>
+									<strong>Optimiser</strong> → J’ai mis en
+									place un processus d’analyse permettant
+									d’améliorer le suivi et de réduire la
+									réapparition des problèmes.
+								</li>
+								<li>
+									<strong>Conduire</strong> → J’ai structuré
+									une démarche durable pour renforcer la
+									maintenance et répondre aux besoins de
+									l’équipe supervision.
+								</li>
+							</ul>
+						</details>
+					</article>
 
-        <article class="panel project tilt reveal">
-          <div class="tags">
-            <figure class="project-media">
-            <img src="assets/process.webp" alt="Aperçu du projet" loading="lazy">
-          </figure>
-            <span class="tag t-green">Projets tuteurés</span>
-            <span class="tag">Process</span>
-          </div>
-          <h3>Établir un rapport de process</h3>
-          <p>Fournir un guide pour identifier, classifier et résoudre les incidents, et simplifier ces processus en une procédure globale pour les superviseurs.</p>
-          <details class="iut"><summary>Compétences IUT ↔ GRDF</summary>
-            <ul class="iut-list">
-              <li><strong>Réaliser</strong> — produire un livrable opérationnel (guide/processus) pour les équipes GRDF.</li>
-              <li><strong>Optimiser</strong> — supprimer les étapes superflues et clarifier les responsabilités.</li>
-              <li><strong>Administrer</strong> — standardiser les actions sur les outils du SI (KSPER, SIAS, KATI).</li>
-              <li><strong>Gérer</strong> — capitaliser les données d’incidents pour mieux piloter.</li>
-              <li><strong>Conduire</strong> — animer des ateliers et faire valider la démarche.</li>
-              <li><strong>Collaborer</strong> — co‑construire avec superviseurs et techniciens.</li>
-            </ul>
-          </details>
-        </article>
+					<article class="panel project tilt reveal">
+						<div class="tags">
+							<figure class="project-media">
+								<img
+									src="assets/process.webp"
+									alt="Aperçu du projet"
+									loading="lazy"
+								/>
+							</figure>
+							<span class="tag t-green">Projets tuteurés</span>
+							<span class="tag">Process</span>
+						</div>
+						<h3>Établir un rapport de process</h3>
+						<p>
+							Fournir un guide pour identifier, classifier et
+							résoudre les incidents, et simplifier ces processus
+							en une procédure globale pour les superviseurs.
+						</p>
+						<details class="iut">
+							<summary>Compétences IUT ↔ GRDF</summary>
+							<ul class="iut-list">
+								<li>
+									<strong>Conduire</strong> → J’ai organisé et
+									formalisé les étapes de traitement des
+									incidents afin de structurer une procédure
+									claire et exploitable.
+								</li>
+								<li>
+									<strong>Collaborer</strong> → J’ai travaillé
+									avec les superviseurs pour comprendre leurs
+									pratiques et concevoir un guide adapté à
+									leur usage quotidien.
+								</li>
 
-        <article class="panel project tilt reveal">
-          <div class="tags">
-            <figure class="project-media">
-            <img src="assets/algo-tri.webp" alt="Aperçu du projet" loading="lazy">
-          </figure>
-            <span class="tag t-blue">SAE - IUT</span>
-            <span class="tag">Algo</span>
-          </div>
-          <h3>Algorithmes de tri</h3>
-          <p>Analyse et compréhension du fonctionnement de plusieurs algorithmes de tri.</p>
-          <details class="iut"><summary>Compétences IUT ↔ GRDF</summary>
-            <ul class="iut-list">
-              <li><strong>Réaliser</strong> — écrire du code fiable ; rigueur utile pour les scripts/outils de contrôle.</li>
-              <li><strong>Optimiser</strong> — raisonner en complexité pour accélérer les contrôles et analyses.</li>
-              <li><strong>Administrer</strong> — sensibilisation à l’environnement d’exécution et à la reproductibilité.</li>
-              <li><strong>Gérer</strong> — structurer les données d’entrée/sortie comme pour des logs d’incident.</li>
-              <li><strong>Conduire</strong> — planifier et comparer des expérimentations.</li>
-              <li><strong>Collaborer</strong> — revue de code et partage de bonnes pratiques.</li>
-            </ul>
-          </details>
-        </article>
+								<li>
+									<strong>Réaliser</strong> → J’ai rédigé et
+									intégré une documentation opérationnelle
+									simplifiant l’identification et la
+									résolution des incidents.
+								</li>
+							</ul>
+						</details>
+					</article>
 
-        <article class="panel project tilt reveal">
-          <div class="tags">
-            <figure class="project-media">
-            <img src="assets/power-bi.webp" alt="Aperçu du projet" loading="lazy">
-          </figure>
-            <span class="tag t-blue">SAE - IUT</span>
-            <span class="tag">Power BI</span>
-          </div>
-          <h3>Analyse de données avec Power BI</h3>
-          <p>Création de rapports pour explorer les résultats d’entreprise et croiser des indicateurs métiers.</p>
-          <details class="iut"><summary>Compétences IUT ↔ GRDF</summary>
-            <ul class="iut-list">
-              <li><strong>Réaliser</strong> — concevoir des rapports comme ceux utilisés pour le suivi GRDF.</li>
-              <li><strong>Optimiser</strong> — modèles de données et mesures efficaces pour des dashboards réactifs.</li>
-              <li><strong>Administrer</strong> — gérer connexions et actualisations de sources.</li>
-              <li><strong>Gérer</strong> — modéliser, nettoyer et interpréter des données.</li>
-              <li><strong>Conduire</strong> — recueillir le besoin et itérer sur la data‑viz.</li>
-              <li><strong>Collaborer</strong> — partager et documenter les rapports pour les équipes.</li>
-            </ul>
-          </details>
-        </article>
+					<article class="panel project tilt reveal">
+						<div class="tags">
+							<figure class="project-media">
+								<img
+									src="assets/algo-tri.webp"
+									alt="Aperçu du projet"
+									loading="lazy"
+								/>
+							</figure>
+							<span class="tag t-blue">SAE - IUT</span>
+							<span class="tag">Algo</span>
+						</div>
+						<h3>Algorithmes de tri</h3>
+						<p>
+							Analyse et compréhension du fonctionnement de
+							plusieurs algorithmes de tri.
+						</p>
+						<details class="iut">
+							<summary>Compétences IUT</summary>
+							<ul class="iut-list">
+								<li>
+									<strong>Réaliser</strong> → J’ai implémenté
+									différents algorithmes de tri pour en
+									comprendre concrètement le fonctionnement.
+								</li>
+								<li>
+									<strong>Optimiser</strong> → J’ai comparé
+									leurs performances (temps d’exécution,
+									consommation de ressources) afin d’évaluer
+									leur efficacité.
+								</li>
+							</ul>
+						</details>
+					</article>
 
-        <article class="panel project tilt reveal">
-          <div class="tags">
-            <figure class="project-media">
-            <img src="assets/site-web.webp" alt="Aperçu du projet" loading="lazy">
-          </figure>
-            <span class="tag t-blue">SAE - IUT</span>
-            <span class="tag">Web</span>
-          </div>
-          <h3>Site web vitrine (HTML/CSS)</h3>
-          <p>Recueil des besoins, conception et réalisation d’un site vitrine adapté.</p>
-          <details class="iut"><summary>Compétences IUT ↔ GRDF</summary>
-            <ul class="iut-list">
-              <li><strong>Réaliser</strong> — transformer un besoin en livrable ; parallèle avec les demandes internes GRDF.</li>
-              <li><strong>Optimiser</strong> — améliorer lisibilité/UX, utile pour la clarté des rapports.</li>
-              <li><strong>Administrer</strong> — héberger/configurer un service comme on déploie un outil de supervision.</li>
-              <li><strong>Gérer</strong> — tracer les demandes et versions.</li>
-              <li><strong>Conduire</strong> — organiser sprints/livrables.</li>
-              <li><strong>Collaborer</strong> — itérer avec le « client » comme avec les équipes terrain.</li>
-            </ul>
-          </details>
-        </article>
+					<article class="panel project tilt reveal">
+						<div class="tags">
+							<figure class="project-media">
+								<img
+									src="assets/power-bi.webp"
+									alt="Aperçu du projet"
+									loading="lazy"
+								/>
+							</figure>
+							<span class="tag t-blue">SAE - IUT</span>
+							<span class="tag">Power BI</span>
+						</div>
+						<h3>Analyse de données avec Power BI</h3>
+						<p>
+							Création de rapports pour explorer les résultats
+							d’entreprise et croiser des indicateurs métiers.
+						</p>
+						<details class="iut">
+							<summary>Compétences IUT</summary>
+							<ul class="iut-list">
+								<li>
+									<strong>Gérer</strong> → J’ai exploité et
+									croisé des indicateurs métiers pour produire
+									une information utile à l’analyse et à la
+									prise de décision.
+								</li>
+								<li>
+									<strong>Réaliser</strong> → J’ai conçu des
+									rapports interactifs et visuels adaptés à
+									l’exploration des résultats d’entreprise.
+								</li>
+								<li>
+									<strong>Optimiser</strong> → J’ai structuré
+									les données afin de rendre l’analyse plus
+									fluide et pertinente.
+								</li>
+							</ul>
+						</details>
+					</article>
 
-        <article class="panel project tilt reveal">
-          <div class="tags">
-            <figure class="project-media">
-            <img src="assets/annuaire-c.webp" alt="Aperçu du projet" loading="lazy">
-          </figure>
-            <span class="tag t-blue">SAE - IUT</span>
-            <span class="tag">C</span>
-          </div>
-          <h3>Gestionnaire d'annuaire client (C)</h3>
-          <p>Programmation d’une application de gestion d’annuaire client en langage C.</p>
-          <details class="iut"><summary>Compétences IUT ↔ GRDF</summary>
-            <ul class="iut-list">
-              <li><strong>Réaliser</strong> — développer une application robuste comme un petit outil métier.</li>
-              <li><strong>Optimiser</strong> — utiliser des structures efficaces pour la recherche/tri, analogue aux traitements d’incidents.</li>
-              <li><strong>Administrer</strong> — gérer fichiers/droits ; sensibilité à l’accès aux données.</li>
-              <li><strong>Gérer</strong> — opérations CRUD comparables à la gestion d’une base d’incidents.</li>
-              <li><strong>Conduire</strong> — partir d’un cahier des charges et livrer en étapes.</li>
-              <li><strong>Collaborer</strong> — tests croisés et documentation.</li>
-            </ul>
-          </details>
-        </article>
+					<article class="panel project tilt reveal">
+						<div class="tags">
+							<figure class="project-media">
+								<img
+									src="assets/site-web.webp"
+									alt="Aperçu du projet"
+									loading="lazy"
+								/>
+							</figure>
+							<span class="tag t-blue">SAE - IUT</span>
+							<span class="tag">Web</span>
+						</div>
+						<h3>Site web vitrine (HTML/CSS)</h3>
+						<p>
+							Recueil des besoins, conception et réalisation d’un
+							site vitrine adapté.
+						</p>
+						<details class="iut">
+							<summary>Compétences IUT</summary>
+							<ul class="iut-list">
+								<li>
+									<strong>Réaliser</strong> → J’ai conçu et
+									développé un site web complet répondant aux
+									besoins définis.
+								</li>
+								<li>
+									<strong>Conduire</strong> → J’ai recueilli
+									les besoins des utilisateurs pour organiser
+									le projet et définir les fonctionnalités
+									essentielles.
+								</li>
+								<li>
+									<strong>Collaborer</strong> → J’ai échangé
+									avec les parties prenantes pour m’assurer
+									que le site corresponde aux attentes et soit
+									ergonomique.
+								</li>
+							</ul>
+						</details>
+					</article>
 
-        <article class="panel project tilt reveal">
-          <div class="tags">
-            <figure class="project-media">
-            <img src="assets/poste-informatique.jpg" alt="Aperçu du projet" loading="lazy">
-          </figure>
-            <span class="tag t-blue">SAE - IUT</span>
-            <span class="tag">Système</span>
-          </div>
-          <h3>Installation de poste informatique</h3>
-          <p>Choix, installation et configuration du matériel en fonction des besoins.</p>
-          <details class="iut"><summary>Compétences IUT ↔ GRDF</summary>
-            <ul class="iut-list">
-              <li><strong>Réaliser</strong> — créer une image/scripting d’installation pour un usage récurrent.</li>
-              <li><strong>Optimiser</strong> — standardiser pour réduire les temps de mise à disposition.</li>
-              <li><strong>Administrer</strong> — configurer AD/GPO et services, directement utile en supervision.</li>
-              <li><strong>Gérer</strong> — inventorier et documenter les postes.</li>
-              <li><strong>Conduire</strong> — checklists, jalons et validation utilisateur.</li>
-              <li><strong>Collaborer</strong> — coordination avec le futur utilisateur/équipe.</li>
-            </ul>
-          </details>
-        </article>
+					<article class="panel project tilt reveal">
+						<div class="tags">
+							<figure class="project-media">
+								<img
+									src="assets/annuaire-c.webp"
+									alt="Aperçu du projet"
+									loading="lazy"
+								/>
+							</figure>
+							<span class="tag t-blue">SAE - IUT</span>
+							<span class="tag">C</span>
+						</div>
+						<h3>Gestionnaire d'annuaire client (C)</h3>
+						<p>
+							Programmation d’une application de gestion
+							d’annuaire client en langage C.
+						</p>
+						<details class="iut">
+							<summary>Compétences IUT</summary>
+							<ul class="iut-list">
+								<li>
+									<strong>Réaliser</strong> → J’ai développé
+									une application complète en C pour gérer les
+									informations des clients.
+								</li>
+								<li>
+									<strong>Optimiser</strong> → J’ai amélioré
+									les structures de données et les algorithmes
+									pour rendre l’application plus rapide et
+									efficace.
+								</li>
+								<li>
+									<strong>Gérer</strong> → J’ai organisé et
+									manipulé les données des clients pour
+									permettre une exploitation fiable et
+									structurée.
+								</li>
+							</ul>
+						</details>
+					</article>
 
-        <article class="panel project tilt reveal">
-          <div class="tags">
-            <figure class="project-media">
-            <img src="assets/service-reseau.jpg" alt="Aperçu du projet" loading="lazy">
-          </figure>
-            <span class="tag t-blue">SAE - IUT</span>
-            <span class="tag">Réseaux</span>
-          </div>
-          <h3>Installation de services réseau</h3>
-          <p>Configuration de services d’hébergement (Apache2, Nginx).</p>
-          <details class="iut"><summary>Compétences IUT ↔ GRDF</summary>
-            <ul class="iut-list">
-              <li><strong>Réaliser</strong> — déployer un service fiable (web), comme pour un outil interne.</li>
-              <li><strong>Optimiser</strong> — paramétrer pour la robustesse et la disponibilité.</li>
-              <li><strong>Administrer</strong> — gérer services et réseau ; proche du contexte de supervision radio.</li>
-              <li><strong>Gérer</strong> — suivre logs/indicateurs pour le pilotage.</li>
-              <li><strong>Conduire</strong> — dérouler une mise en prod encadrée.</li>
-              <li><strong>Collaborer</strong> — documenter pour l’équipe d’exploitation.</li>
-            </ul>
-          </details>
-        </article>
-      </div>
-    </div>
-  </section>
+					<article class="panel project tilt reveal">
+						<div class="tags">
+							<figure class="project-media">
+								<img
+									src="assets/poste-informatique.jpg"
+									alt="Aperçu du projet"
+									loading="lazy"
+								/>
+							</figure>
+							<span class="tag t-blue">SAE - IUT</span>
+							<span class="tag">Système</span>
+						</div>
+						<h3>Installation de poste informatique</h3>
+						<p>
+							Choix, installation et configuration du matériel en
+							fonction des besoins.
+						</p>
+						<details class="iut">
+							<summary>Compétences IUT</summary>
+							<ul class="iut-list">
+								<li>
+									<strong>Administrer</strong> → J’ai installé
+									et configuré le matériel et les logiciels
+									pour assurer le bon fonctionnement des
+									postes selon les besoins.
+								</li>
+								<li>
+									<strong>Conduire</strong> → J’ai analysé les
+									besoins des utilisateurs pour sélectionner
+									les équipements et organiser le déploiement.
+								</li>
+								<li>
+									<strong>Collaborer</strong> → J’ai travaillé
+									avec les utilisateurs finaux pour valider la
+									configuration et assurer une prise en main
+									efficace.
+								</li>
+							</ul>
+						</details>
+					</article>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container contact-card">
-      <div class="panel reveal">
-        <h2>Contact</h2>
-        <p>📧 Email : <a href="mailto:gaspard.myr@orange.fr">gaspard.myr@orange.fr</a></p>
-        <p>💼 LinkedIn : <a href="https://www.linkedin.com/in/gaspard-myr" target="_blank" rel="noopener">linkedin.com/in/gaspard-myr</a></p>
-        <p>💻 GitHub : <a href="https://github.com/Drappsag" target="_blank" rel="noopener">github.com/Drappsag</a></p>
-      </div>
-      <form class="panel reveal" onsubmit="event.preventDefault(); alert('Merci ! Vous pouvez m’écrire directement par email.');">
-        <h3 class="panel-title">Me laisser un message</h3>
-        <div class="field">
-          <label for="name">Nom</label>
-          <input id="name" placeholder="Votre nom" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="vous@domaine.com" required>
-        </div>
-        <div class="field">
-          <label for="msg">Message</label>
-          <textarea id="msg" rows="5" placeholder="Votre message..."></textarea>
-        </div>
-        <button class="btn primary" type="submit">Envoyer</button>
-      </form>
-    </div>
-  </section>
+					<article class="panel project tilt reveal">
+						<div class="tags">
+							<figure class="project-media">
+								<img
+									src="assets/service-reseau.jpg"
+									alt="Aperçu du projet"
+									loading="lazy"
+								/>
+							</figure>
+							<span class="tag t-blue">SAE - IUT</span>
+							<span class="tag">Réseaux</span>
+						</div>
+						<h3>Installation de services réseau</h3>
+						<p>
+							Configuration de services d’hébergement (Apache2,
+							Nginx).
+						</p>
+						<details class="iut">
+							<summary>Compétences IUT</summary>
+							<ul class="iut-list">
+								<li>
+									<strong>Administrer</strong> → J’ai installé
+									et configuré des serveurs web (Apache2,
+									Nginx) pour assurer la disponibilité et la
+									fiabilité des services.
+								</li>
+								<li>
+									<strong>Réaliser </strong> → J’ai mis en
+									place des environnements opérationnels
+									répondant aux besoins spécifiques des
+									projets.
+								</li>
+								<li>
+									<strong>Optimiser</strong> J’ai ajusté les
+									configurations pour améliorer les
+									performances et la sécurité des services
+									réseau.
+								</li>
+							</ul>
+						</details>
+					</article>
+				</div>
+			</div>
+		</section>
 
-  <footer>
-    <div class="container">© <span id="year"></span> Gaspard MEYER — Portfolio.
-      <br><span class="muted small">Ce site est réalisé par mes soins et hébergé sur GitHub Pages.</span>
-    </div>
-  </footer>
+		<!-- CONTACT -->
+		<section id="contact">
+			<div class="container contact-card">
+				<div class="panel reveal">
+					<h2>Contact</h2>
+					<p>
+						📧 Email :
+						<a href="mailto:gaspard.myr@orange.fr"
+							>gaspard.myr@orange.fr</a
+						>
+					</p>
+					<p>
+						💼 LinkedIn :
+						<a
+							href="https://www.linkedin.com/in/gaspard-myr"
+							target="_blank"
+							rel="noopener"
+							>linkedin.com/in/gaspard-myr</a
+						>
+					</p>
+					<p>
+						💻 GitHub :
+						<a
+							href="https://github.com/Drappsag"
+							target="_blank"
+							rel="noopener"
+							>github.com/Drappsag</a
+						>
+					</p>
+				</div>
+				<form
+					class="panel reveal"
+					onsubmit="event.preventDefault(); alert('Merci ! Vous pouvez m’écrire directement par email.');"
+				>
+					<h3 class="panel-title">Me laisser un message</h3>
+					<div class="field">
+						<label for="name">Nom</label>
+						<input id="name" placeholder="Votre nom" required />
+					</div>
+					<div class="field">
+						<label for="email">Email</label>
+						<input
+							id="email"
+							type="email"
+							placeholder="vous@domaine.com"
+							required
+						/>
+					</div>
+					<div class="field">
+						<label for="msg">Message</label>
+						<textarea
+							id="msg"
+							rows="5"
+							placeholder="Votre message..."
+						></textarea>
+					</div>
+					<button class="btn primary" type="submit">Envoyer</button>
+				</form>
+			</div>
+		</section>
 
-  <script src="script.js"></script>
-</body>
+		<footer>
+			<div class="container">
+				© <span id="year"></span> Gaspard MEYER — Portfolio. <br /><span
+					class="muted small"
+					>Réalisé par Gaspard MEYER.</span
+				>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
 </html>
