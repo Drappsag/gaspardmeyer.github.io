@@ -11,6 +11,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Ajout ultra-minimal pour supporter une image optionnelle par tuile projet -->
+  <style>
+    /* Image optionnelle dans une tuile projet */
+    .project-media{margin:.75rem 0;border-radius:16px;overflow:hidden}
+    .project-media img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#projets">Aller au contenu</a>
@@ -205,6 +212,16 @@
     <div class="container">
       <h2>Projets</h2>
       <div class="projects">
+        
+        <!-- 
+          ASTUCE : Pour ajouter une image à une tuile projet, insérez ce bloc
+          (juste après <div class="tags">…</div> par exemple) :
+
+          <figure class="project-media">
+            <img src="assets/projets/mon-image.jpg" alt="Aperçu du projet" loading="lazy">
+          </figure>
+        -->
+
         <article class="panel project tilt reveal">
           <div class="tags">
             <span class="tag t-green">Projets tuteurés</span>
@@ -266,6 +283,9 @@
 
         <article class="panel project tilt reveal">
           <div class="tags">
+            <figure class="project-media">
+            <img src="assets/problemes.webp" alt="Aperçu du projet" loading="lazy">
+          </figure>
             <span class="tag t-green">Projets tuteurés</span>
             <span class="tag">K‑SPER</span>
           </div>
@@ -285,6 +305,9 @@
 
         <article class="panel project tilt reveal">
           <div class="tags">
+            <figure class="project-media">
+            <img src="assets/process.webp" alt="Aperçu du projet" loading="lazy">
+          </figure>
             <span class="tag t-green">Projets tuteurés</span>
             <span class="tag">Process</span>
           </div>
@@ -304,6 +327,9 @@
 
         <article class="panel project tilt reveal">
           <div class="tags">
+            <figure class="project-media">
+            <img src="assets/algo-tri.webp" alt="Aperçu du projet" loading="lazy">
+          </figure>
             <span class="tag t-blue">SAE - IUT</span>
             <span class="tag">Algo</span>
           </div>
@@ -323,6 +349,9 @@
 
         <article class="panel project tilt reveal">
           <div class="tags">
+            <figure class="project-media">
+            <img src="assets/power-bi.webp" alt="Aperçu du projet" loading="lazy">
+          </figure>
             <span class="tag t-blue">SAE - IUT</span>
             <span class="tag">Power BI</span>
           </div>
@@ -342,6 +371,9 @@
 
         <article class="panel project tilt reveal">
           <div class="tags">
+            <figure class="project-media">
+            <img src="assets/site-web.webp" alt="Aperçu du projet" loading="lazy">
+          </figure>
             <span class="tag t-blue">SAE - IUT</span>
             <span class="tag">Web</span>
           </div>
@@ -361,6 +393,9 @@
 
         <article class="panel project tilt reveal">
           <div class="tags">
+            <figure class="project-media">
+            <img src="assets/annuaire-c.webp" alt="Aperçu du projet" loading="lazy">
+          </figure>
             <span class="tag t-blue">SAE - IUT</span>
             <span class="tag">C</span>
           </div>
@@ -380,6 +415,9 @@
 
         <article class="panel project tilt reveal">
           <div class="tags">
+            <figure class="project-media">
+            <img src="assets/poste-informatique.jpg" alt="Aperçu du projet" loading="lazy">
+          </figure>
             <span class="tag t-blue">SAE - IUT</span>
             <span class="tag">Système</span>
           </div>
@@ -399,6 +437,9 @@
 
         <article class="panel project tilt reveal">
           <div class="tags">
+            <figure class="project-media">
+            <img src="assets/service-reseau.jpg" alt="Aperçu du projet" loading="lazy">
+          </figure>
             <span class="tag t-blue">SAE - IUT</span>
             <span class="tag">Réseaux</span>
           </div>
